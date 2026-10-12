@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BUCO | Burgers &amp; Cocktails — Beirut</title>
+  <meta name="description" content="BUCO is a modern gastro bar on Gouraud Street in Beirut serving elevated burgers, cocktails and comfort food in a distinctive nightlife setting.">
+  <meta name="theme-color" content="#16110d">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="BUCO | Burgers &amp; Cocktails — Beirut">
+  <meta property="og:description" content="Comfort food, taken seriously. Burgers and cocktails on Gouraud Street, Beirut.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>
+    document.documentElement.classList.replace('no-js','js');
+    document.addEventListener('error', function (e) {
+      var im = e.target;
+      if (!im || im.tagName !== 'IMG') return;
+      im.classList.add('is-broken');
+    }, true);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "BUCO",
+    "description": "Gastro bar serving burgers and cocktails on Gouraud Street, Beirut.",
+    "servesCuisine": ["Burgers", "Cocktails"],
+    "telephone": "+961 3 843 474",
+    "address": {"@type": "PostalAddress", "streetAddress": "Gouraud Street", "addressLocality": "Beirut", "addressCountry": "LB"},
+    "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:30", "closes": "00:00"}]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="nav__logo" href="#top" aria-label="BUCO, back to top"><img class="logo logo--cream" src="assets/img/logo-cream.svg" alt="" width="42" height="44"><img class="logo logo--terra" src="assets/img/logo-terra.svg" alt="" width="42" height="44"></a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#cocktails">Cocktails</a>
+        <a href="#experience">Experience</a>
+      </nav>
+      <a class="btn btn--sm btn--light nav__cta" href="#visit" data-link="reserve">Reserve</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span class="nav__toggle-label">Menu</span>
+        <span class="nav__toggle-lines" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mm" id="mobile-menu" data-menu hidden>
+    <nav class="mm__links" aria-label="Mobile">
+      <a href="#about"><small>01</small>About</a>
+      <a href="#menu"><small>02</small>Menu</a>
+      <a href="#cocktails"><small>03</small>Cocktails</a>
+      <a href="#experience"><small>04</small>Experience</a>
+    </nav>
+    <div class="mm__foot">
+      <a class="btn btn--light btn--block" href="#visit" data-link="reserve">Reserve a table</a>
+      <a class="mm__phone" href="tel:+9613843474">Call +961 3 843 474</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media media">{{img hero eager}}</div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <p class="hero__cred reveal-fade">MENA’s 50 Best Restaurants 2026 · No.&nbsp;39</p>
+      <div class="hero__content">
+        <p class="hero__place reveal-line"><span>Beirut · Gouraud Street</span></p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="wordmark reveal-line"><span>BUCO</span></span>
+          <span class="hero__sub reveal-line"><span>Burgers &amp; Cocktails</span></span>
+        </h1>
+        <p class="hero__tag reveal-line"><span>Comfort food, <em>taken seriously.</em></span></p>
+        <div class="hero__actions reveal-fade">
+          <a class="btn btn--light" href="#visit" data-link="reserve">Reserve a table</a>
+          <a class="btn btn--ghost-light" href="#menu">View the menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro" id="about" aria-labelledby="intro-title">
+      <div class="wrap">
+        <h2 class="intro__title display" id="intro-title">
+          <span class="reveal-line"><span>Burgers.</span></span>
+          <span class="reveal-line"><span>Cocktails.</span></span>
+          <span class="reveal-line"><span>That’s the <em class="serif">point.</em></span></span>
+        </h2>
+        <div class="intro__copy reveal">
+          <p class="lede">BUCO is a modern gastro bar in the heart of Beirut, built around one simple idea: take the food everybody knows and make it worth remembering.</p>
+          <p>Premium ingredients, serious technique and cocktails made to stand beside the food — without turning dinner into something formal.</p>
+        </div>
+        <div class="intro__pics">
+          <figure class="intro__img arch reveal-img"><div class="media">{{img room}}</div></figure>
+          <figure class="intro__img-sm reveal-img"><div class="media">{{img fries}}</div>
+            <figcaption>The glasses, <em class="serif">for the fries.</em></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE BURGERS -->
+    <section class="food" aria-labelledby="food-title">
+      <div class="wrap food__head">
+        <p class="eyebrow reveal">Signatures</p>
+        <h2 class="display food__title" id="food-title"><span class="reveal-line"><span>The Burgers</span></span></h2>
+      </div>
+
+      <ol class="track" data-track tabindex="0" aria-label="Signature burgers. Swipe or use arrow keys to scroll.">
+        <li class="dish">
+          <figure class="dish__img"><div class="media">{{img wagyu}}</div></figure>
+          <div class="dish__text">
+            <span class="dish__no">01</span>
+            <h3 class="dish__name">Wagyu</h3>
+            <p>120g wagyu patty, provolone, caramelized onions, lettuce, house dressing, Japanese milk bun.</p>
+          </div>
+        </li>
+        <li class="dish">
+          <figure class="dish__img"><div class="media">{{img miso}}</div></figure>
+          <div class="dish__text">
+            <span class="dish__no">02</span>
+            <h3 class="dish__name">Miso BBQ</h3>
+            <p>Australian grain-fed beef, mature cheddar, jalapeños, pickled red cabbage, homemade miso BBQ sauce, Hokkaido milk bun.</p>
+          </div>
+        </li>
+        <li class="dish">
+          <figure class="dish__img"><div class="media">{{img jalapeno}}</div></figure>
+          <div class="dish__text">
+            <span class="dish__no">03</span>
+            <h3 class="dish__name">Jalapeño Smash</h3>
+            <p>Smashed beef patty, crispy potato rösti, whipped cheddar cream cheese, jalapeños.</p>
+          </div>
+        </li>
+      </ol>
+      <div class="wrap track__ui">
+        <p class="track__count" aria-hidden="true"><span data-track-now>01</span> / 03</p>
+        <div class="track__bar" aria-hidden="true"><i data-track-bar></i></div>
+        <div class="track__btns">
+          <button type="button" class="round" data-track-prev aria-label="Previous burger"><span aria-hidden="true">←</span></button>
+          <button type="button" class="round" data-track-next aria-label="Next burger"><span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL MENU -->
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <p class="eyebrow reveal">Eat &amp; drink</p>
+        <h2 class="display menu__title" id="menu-title"><span class="reveal-line"><span>The Menu</span></span></h2>
+
+        <div class="tabs" role="tablist" aria-label="Menu">
+          <button type="button" role="tab" id="tab-food" aria-controls="panel-food" aria-selected="true">Food</button>
+          <button type="button" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Drinks</button>
+        </div>
+
+        <div class="panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food" tabindex="0">
+          <div class="group">
+            <h3 class="group__title">Burgers</h3>
+            <p class="group__note">All burgers are served with French fries. Any burger can be served in a lettuce wrap or on a gluten-free bun.</p>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Beef</h3>
+            <ul class="items">
+              <li><h4>Wagyu</h4><p>Wagyu patty, caramelized onions, lettuce, provolone cheese &amp; house dressing, Hokkaido milk bun<br><span class="variant">120g / 200g patty</span></p><span class="price">24 / 28</span></li>
+              <li><h4>Naked Wagyu</h4><p>Wagyu patty, provolone cheese, Hokkaido milk bun<br><span class="variant">120g / 200g patty</span></p><span class="price">22 / 26</span></li>
+              <li><h4>Oklahoma</h4><p>Smashed double Wagyu patties, onions, mustard, cheddar cheese, pickles, Hokkaido milk bun</p><span class="price">22</span></li>
+              <li><h4>Classic</h4><p>Australian grain-fed, onions, ketchup, mustard, cheddar cheese, pickles, Hokkaido milk bun<br><span class="variant">120g / 200g patty</span></p><span class="price">18 / 23</span></li>
+              <li><h4>BUCO’s Mc Jr</h4><p>Double Australian grain-fed patties, cheddar cheese, lettuce, Mc Jr sauce, Hokkaido milk bun</p><span class="price">22</span></li>
+              <li><h4>Miso BBQ</h4><p>Australian grain-fed, mature cheddar cheese, jalapeños, pickled red cabbage &amp; homemade miso BBQ sauce, Hokkaido milk bun<br><span class="variant">120g / 200g patty</span></p><span class="price">19 / 22</span></li>
+              <li><h4>Truffled Shroomz</h4><p>Australian grain-fed, mushroom duxelles, Emmental cheese, porcini powder, truffle mayo, potato bun, pickles<br><span class="variant">120g / 200g patty</span></p><span class="price">22 / 26</span></li>
+              <li><h4>Mulberry Bacon</h4><p>Australian grain-fed, pork bacon, cheddar cheese, crispy onion, mulberry jam, Dijon mustard, potato bun<br><span class="variant">120g / 200g patty</span></p><span class="price">20 / 24</span></li>
+              <li><h4>Jalapeño Smash Burger</h4><p>Smashed beef patty, crispy potato rösti, whipped cheddar cream cheese, jalapeños</p><span class="price">23</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Fish</h3>
+            <ul class="items">
+              <li><h4>Buns &amp; Pearls</h4><p>Fried seabass, tartare &amp; cheddar cheese<br><span class="variant">Contains alcohol in batter</span></p><span class="price">20</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Chicken</h3>
+            <ul class="items">
+              <li><h4>Fried Chicken</h4><p>Cheddar cheese, lettuce, mayo, pickles<br><span class="variant">Mild / medium / spicy</span></p><span class="price">16</span></li>
+              <li><h4>Lemon &amp; Pepper</h4><p>Fried chicken, aged parmesan, iceberg, dried lemon &amp; pepper sauce, pickles</p><span class="price">17</span></li>
+              <li><h4>Grilled Chicken Burger</h4><p>Avocado, wasabi mayo, pickles, basil, multi-cereal bun</p><span class="price">18</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Vegan</h3>
+            <ul class="items">
+              <li><h4>Vegan Burger</h4><p>Plant-based meat, lettuce, pickles, vegan mayo</p><span class="price">21</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Off the bun</h3>
+            <ul class="items">
+              <li><h4>Grilled Chicken</h4><p>Herb, mashed potatoes</p><span class="price">27</span></li>
+              <li><h4>Grilled Seabass</h4><p>Whole seabass, asparagus, miso beurre blanc</p><span class="price">35</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3 class="group__title">Nibbles &amp; Sharing</h3>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Nibbles</h3>
+            <ul class="items">
+              <li><h4>Edamame with sea salt</h4><span class="price">7</span></li>
+              <li><h4>Corn Ribs</h4><p>Chilli butter</p><span class="price">10</span></li>
+              <li><h4>Shrimp Taco</h4><p>Citrus garlic aioli</p><span class="price">13</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Sharing</h3>
+            <ul class="items">
+              <li><h4>Avocado Pizette</h4><p>Crispy flat bread, yuzu mayo, lemon oil</p><span class="price">10</span></li>
+              <li><h4>Mini Lobster Roll</h4><p>Canadian lobster, lemon garlic aioli in soft toasted brioche</p><span class="price">38</span></li>
+              <li><h4>Steak Roll</h4><p>Mushrooms, onions, provolone cheese, truffle</p><span class="price">22</span></li>
+              <li><h4>Grilled Beef &amp; Truffle Caramel</h4><span class="price">22</span></li>
+              <li><h4>Fried Chicks</h4><p>Chicken tenders, blue cheese, honey mustard, miso BBQ</p><span class="price">14</span></li>
+              <li><h4>Sweet Potato Fries</h4><p>Home-made sweet potato fries, French onion dip</p><span class="price">7</span></li>
+              <li><h4>Breadless Chicken Sando</h4><p>Avocado &amp; Parmigiano Reggiano</p><span class="price">13</span></li>
+              <li><h4>Fried Shrimps</h4><span class="price">19</span></li>
+              <li><h4>Home Made Fries</h4><span class="price">6</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Greens</h3>
+            <ul class="items">
+              <li><h4>Beetroot &amp; Goat Cheese</h4><p>Beetroot, leafy greens, cranberry, goat cheese, candied walnuts, mandarin and pomelo dressing</p><span class="price">18</span></li>
+              <li><h4>Zoodle Salad</h4><p>Candied tomatoes, mint, pepper confit, oregano, feta crumble &amp; candied walnuts</p><span class="price">15</span></li>
+              <li><h4>Chicken Caesar</h4><p>Fried chicken tenders, parmesan cheese, croutons, Caesar dressing</p><span class="price">14</span></li>
+              <li><h4>Garden</h4><p>Seasonal leafy greens, candied pistachio, Umami dressing</p><span class="price">13</span></li>
+              <li><h4>Shrimp Avocado</h4><p>Quinoa, leafy greens, avocado, ponzu dressing</p><span class="price">17</span></li>
+              <li><h4>Thai Beef</h4><p>Sliced beef, tomato, cucumber, mint, sesame</p><span class="price">20</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Raw</h3>
+            <ul class="items">
+              <li><h4>Salmon Sashimi</h4><p>Miso dressing, celery leaf oil</p><span class="price">15</span></li>
+              <li><h4>Shrimp Carpaccio</h4><p>Cooked shrimps</p><span class="price">15</span></li>
+              <li><h4>Yellowfin Tuna Tartare</h4><span class="price">20</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3 class="group__title">Sweets</h3>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Desserts</h3>
+            <ul class="items">
+              <li><h4>Teramiso</h4><p>Tiramisu with miso</p><span class="price">12</span></li>
+              <li><h4>Cookie Skillet</h4><p>Serves two</p><span class="price">18</span></li>
+              <li><h4>Sticky Date Pudding</h4><p>Cardamom caramel</p><span class="price">12</span></li>
+              <li><h4>Chocolate Fondant</h4><span class="price">14</span></li>
+              <li><h4>Soft Serve</h4><p>Madagascar vanilla</p><span class="price">7</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" tabindex="0">
+          <div class="group">
+            <h3 class="group__title">Cocktails</h3>
+            <p class="group__note">A full program built to stand up to fat and smoke.</p>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Pre dinner</h3>
+            <ul class="items">
+              <li><h4>Mini Martini</h4><p>A frosted dry Martini served as it should be</p><span class="price">7</span></li>
+              <li><h4>Rosita</h4><p>Tequila, Amaro, Vermouth, lime zest</p><span class="price">11</span></li>
+              <li><h4>Negroni</h4><p>With a salted dark chocolate truffle</p><span class="price">14</span></li>
+              <li><h4>Dry Daiquiri</h4><p>Rum, Campari, passionfruit, lime</p><span class="price">10</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Short &amp; sours</h3>
+            <ul class="items">
+              <li><h4>Gigi Margarita</h4><p>Spicy guava margarita with a flair</p><span class="price">15</span></li>
+              <li><h4>Whiskey Sour</h4><p>Bourbon, citrus, sugar, aquafaba, bitters</p><span class="price">11</span></li>
+              <li><h4>Celery Sour</h4><p>Celery gin, lacto-pineapple, lime, Aleppo paste, cardamom</p><span class="price">13</span></li>
+              <li><h4>Peppercorn</h4><p>Gin, native watermint, local peppertree berries, Tagetes cordial, super grapefruit</p><span class="price">12</span></li>
+              <li><h4>Thyme Gimlet</h4><p>Thyme vodka, mandarin cordial, lemon juice, organic agave, grapefruit bitters, olive oil</p><span class="price">12</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Long &amp; cobblers</h3>
+            <ul class="items">
+              <li><h4>Paloma</h4><p>Tequila, grapefruit soda, lime</p><span class="price">15</span></li>
+              <li><h4>Nikka Highball</h4><p>Nikka from the barrel, soda, bamboo leaf</p><span class="price">21</span></li>
+              <li><h4>Pimm’s Cup</h4><p>Pimm’s No.1, lemon, ginger ale, strawberry leather</p><span class="price">14</span></li>
+              <li><h4>Margo Spritz</h4><p>A classic spritz topped with Frisco Margarita</p><span class="price">12</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Rosé spritz</h3>
+            <ul class="items">
+              <li><h4>Coco Spritz</h4><p>Almaza Rosé, orange juice, coconut syrup</p><span class="price">10</span></li>
+              <li><h4>Tropico Rosé</h4><p>Almaza Rosé, pineapple juice, passion syrup</p><span class="price">10</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Strong finish</h3>
+            <ul class="items">
+              <li><h4>Oaxaca</h4><p>Mezcal, tequila añejo, organic agave, Mexican mole bitters</p><span class="price">14</span></li>
+              <li><h4>Coco Lime Punch</h4><p>Coconut rum, lime zest, Ras el Hanout</p><span class="price">11</span></li>
+              <li><h4>Classic Old Fashioned</h4><p>Because it’s so rare to have one</p><span class="price">13</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Sweet finish</h3>
+            <ul class="items">
+              <li><h4>Strawberry Chartreuse Punch</h4><p>Cognac, strawberry, champagne reduction, cream whey, cloves bitters, orange blossom</p><span class="price">10</span></li>
+              <li><h4>Irish Exit</h4><p>Irish whiskey, natural cane sugar, fresh coffee, vanilla cream</p><span class="price">11</span></li>
+              <li><h4>Mezcal Espresso-tini</h4><p>Ojo de Dios Mezcal, coffee liqueur, hazelnut yoghurt</p><span class="price">20</span></li>
+              <li><h4>Colonel Sgroppino</h4><p>Vodka, lemon sorbet, Prosecco, berries</p><span class="price">10</span></li>
+              <li><h4>Umami Cobbler</h4><p>Vodka, white cacao, kiwi, pressed apple</p><span class="price">13</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Nocktails — low &amp; no</h3>
+            <ul class="items">
+              <li><h4>Exotic Sangria</h4><p>Local exotic fruits, dry white wine, soda</p><span class="price">8</span></li>
+              <li><h4>Lychee Shrub</h4><p>Lychee, apple vinegar, rose soda</p><span class="price">8</span></li>
+              <li><h4>Sober Mule</h4><p>Cucumber, ginger, sour mix, ginger ale</p><span class="price">6</span></li>
+              <li><h4>Chocolate Milkshake</h4><span class="price">9</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3 class="group__title">Wines &amp; Sparklings</h3>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">By the glass</h3>
+            <ul class="items">
+              <li><h4>Mirabello Pinot Grigio 2024, Delle Venezie DOC</h4><p>Veneto, Italy</p><span class="price">8</span></li>
+              <li><h4>La Perrière, La Petite Perrière 2022, Pinot Noir Rosé</h4><p>Loire, France</p><span class="price">8</span></li>
+              <li><h4>Gancia Prosecco</h4><p>Veneto, Italy</p><span class="price">9</span></li>
+              <li><h4>LM de Moussas 2022, Bordeaux AOP</h4><p>Bordeaux, France</p><span class="price">9</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Red</h3>
+            <ul class="items">
+              <li><h4>Moulin de Gassac 2023</h4><p>Clus Languedoc, France</p><span class="price">40</span></li>
+              <li><h4>Domaine de Lambisque, Les Vignes Sauvages 2020</h4><p>Côtes du Rhône, France</p><span class="price">60</span></li>
+              <li><h4>Château Haut Pontet 2021</h4><p>Saint Émilion Grand Cru, Bordeaux</p><span class="price">115</span></li>
+              <li><h4>Beronia Gran Reserva 2016</h4><p>Spain</p><span class="price">125</span></li>
+              <li><h4>Château Grand-Puy-Lacoste, Lacoste Borie 2021</h4><p>Pauillac, Bordeaux</p><span class="price">155</span></li>
+              <li><h4>Jean-Baptiste Jessiaume, Volnay Village Rouge 2020</h4><p>Côtes de Beaune, Burgundy, France</p><span class="price">145</span></li>
+              <li><h4>Château Lagrange, Les Fiefs de Lagrange 2021</h4><p>Saint-Julien, Bordeaux</p><span class="price">140</span></li>
+              <li><h4>Château Tour De Pez 2019</h4><p>Saint-Estèphe, Bordeaux</p><span class="price">140</span></li>
+              <li><h4>Château Montrose, La Dame De Montrose 2021</h4><p>Saint-Estèphe, Bordeaux</p><span class="price">280</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">White</h3>
+            <ul class="items">
+              <li><h4>Jean-Baptiste Jessiaume, Bourgogne Chardonnay 2022</h4><p>Burgundy, France</p><span class="price">125</span></li>
+              <li><h4>Domaine de Terres Blanches, Alchimie 2021</h4><p>Loire, France</p><span class="price">57</span></li>
+              <li><h4>Château de Respide 2023, Graves</h4><p>Bordeaux, France</p><span class="price">53</span></li>
+              <li><h4>Edouard Delaunay Chablis Grand Calcaire 2022, Chablis</h4><p>Burgundy, France</p><span class="price">100</span></li>
+              <li><h4>Jean-Baptiste Jessiaume, Rully Premier Cru Marissou 2021</h4><p>Burgundy, France</p><span class="price">155</span></li>
+              <li><h4>Jean-Baptiste Jessiaume, Rully Clos Bellecroix Village 2021</h4><p>Burgundy, France</p><span class="price">140</span></li>
+              <li><h4>Araldica ’Alasia’ Gavi Di Gavi 2024, Gavi DOC</h4><p>Piedmont, Italy</p><span class="price">72</span></li>
+              <li><h4>Moulin de Gassac, Guilhem 2023</h4><p>Languedoc, France</p><span class="price">40</span></li>
+              <li><h4>Edouard Delaunay, Septembre Bourgogne Chardonnay 2022</h4><p>Burgundy, France</p><span class="price">95</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Rosé</h3>
+            <ul class="items">
+              <li><h4>Guilhem, Moulin de Gassac, Rosé 2023</h4><p>Languedoc, France</p><span class="price">40</span></li>
+              <li><h4>La Perrière, La Petite Perrière, Pinot Noir Rosé 2022</h4><p>Loire, France</p><span class="price">50</span></li>
+              <li><h4>Château D’Estoublon, Roseblood Rosé 2023</h4><p>Coteaux Varois en Provence, France</p><span class="price">70</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Champagne &amp; Prosecco</h3>
+            <ul class="items">
+              <li><h4>Lanson, Black Label Brut</h4><p>Champagne, France</p><span class="price">155</span></li>
+              <li><h4>Lanson Rose, Black Label Rosé</h4><p>Champagne, France</p><span class="price">220</span></li>
+              <li><h4>Gancia</h4><p>Veneto, Italy</p><span class="price">40</span></li>
+              <li><h4>Gancia Rosé</h4><p>Veneto, Italy</p><span class="price">50</span></li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3 class="group__title">Beer &amp; Soft Drinks</h3>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Beer</h3>
+            <ul class="items">
+              <li><h4>Almaza</h4><span class="price">5</span></li>
+              <li><h4>Elmir</h4><span class="price">8</span></li>
+              <li><h4>Wata Cider</h4><span class="price">8</span></li>
+              <li><h4>Noam Beer</h4><span class="price">10</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Cold</h3>
+            <ul class="items">
+              <li><h4>Fresh Orange Juice</h4><span class="price">4</span></li>
+              <li><h4>Water</h4><p>Still small / large</p><span class="price">3 / 5</span></li>
+              <li><h4>Soft Drinks</h4><p>Pepsi &amp; 7up</p><span class="price">3.5</span></li>
+              <li><h4>Sparkling Water</h4><span class="price">3.5</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h3 class="cat__title">Hot</h3>
+            <ul class="items">
+              <li><h4>Espresso</h4><p>Single / double / decaf</p><span class="price">3 / 5 / 3</span></li>
+              <li><h4>Tea</h4><p>A selection of premium loose tea</p><span class="price">3.5</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="menu__note menu__note--price">All prices are in USD, inclusive of VAT.</p>
+        <p class="menu__note">Menu changes with the season. Tell your server about any allergies before ordering. Alcohol served only to guests of legal drinking age.</p>
+        <a class="btn btn--ink" href="#" data-link="menu" hidden>Download the full menu</a>
+      </div>
+    </section>
+
+    <!-- COCKTAILS -->
+    <section class="co" id="cocktails" aria-labelledby="co-title">
+      <div class="wrap co__grid">
+        <div class="co__head">
+          <h2 class="display co__title" id="co-title">
+            <span class="reveal-line"><span>And then</span></span>
+            <span class="reveal-line"><span>there’s the</span></span>
+            <span class="reveal-line"><span class="co__co">CO.</span></span>
+          </h2>
+          <p class="co__lede reveal"><em class="serif">Because BUCO isn’t only about the burger.</em></p>
+        </div>
+
+        <figure class="co__img arch" aria-hidden="true">
+          <div class="media is-active" data-co="0">{{img cobbler decor}}</div>
+          <div class="media" data-co="1">{{img gimlet decor}}</div>
+          <div class="media" data-co="2">{{img espresso decor}}</div>
+        </figure>
+
+        <ul class="drinks">
+          <li class="drink reveal is-active" data-co-item="0">
+            <div class="drink__thumb arch media" aria-hidden="true">{{img cobbler decor}}</div>
+            <div class="drink__body"><span class="drink__no">I</span><h3 class="drink__name">Umami Cobbler</h3><p>Vodka, white cacao, kiwi, pressed apple.</p></div>
+          </li>
+          <li class="drink reveal" data-co-item="1">
+            <div class="drink__thumb arch media" aria-hidden="true">{{img gimlet decor}}</div>
+            <div class="drink__body"><span class="drink__no">II</span><h3 class="drink__name">Thyme Gimlet</h3><p>Thyme vodka, mandarin, lemon, grapefruit bitters.</p></div>
+          </li>
+          <li class="drink reveal" data-co-item="2">
+            <div class="drink__thumb arch media" aria-hidden="true">{{img espresso decor}}</div>
+            <div class="drink__body"><span class="drink__no">III</span><h3 class="drink__name">Mezcal Espresso Martini</h3><p>The after-dinner one.</p></div>
+          </li>
+        </ul>
+        <a class="co__all reveal" href="#menu" data-open-tab="drinks">See all drinks <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="exp" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <h2 class="display exp__title" id="exp-title">
+          <span class="reveal-line"><span>Come for</span></span>
+          <span class="reveal-line"><span>dinner.</span></span>
+          <span class="reveal-line"><span><em class="serif">Stay for the night.</em></span></span>
+        </h2>
+        <div class="exp__grid">
+          <figure class="exp__a arch reveal-img"><div class="media">{{img bar}}</div></figure>
+          <div class="exp__copy reveal">
+            <p class="lede">Warm terracotta, an open kitchen, a curved bar and the energy of Gouraud Street outside.</p>
+            <p>Date night. Drinks with friends. One more burger than you planned.</p>
+          </div>
+          <figure class="exp__b reveal-img"><div class="media">{{img warmRoom}}</div></figure>
+          <figure class="exp__c reveal-img"><div class="media">{{img kitchen}}</div></figure>
+          <figure class="exp__d reveal-img"><div class="media">{{img trio}}</div></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEF -->
+    <section class="chef" aria-labelledby="chef-title">
+      <div class="wrap chef__grid">
+        <figure class="chef__img reveal-img"><div class="media">{{img chef}}</div></figure>
+        <div class="chef__text">
+          <p class="eyebrow reveal">The chef</p>
+          <h2 class="display chef__title" id="chef-title">
+            <span class="reveal-line"><span>From Noma</span></span>
+            <span class="reveal-line"><span><em class="serif">to Beirut.</em></span></span>
+          </h2>
+          <p class="lede reveal">Chef Tarek Alameddine opened BUCO in late 2023, bringing the precision of fine dining into food that doesn’t need an introduction.</p>
+          <p class="reveal">Before coming home, he spent years as a sous chef at Noma in Copenhagen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARD -->
+    <section class="award" aria-labelledby="award-title">
+      <div class="wrap award__inner">
+        <p class="award__num reveal" aria-hidden="true">#39</p>
+        <h2 class="award__label reveal" id="award-title"><span class="visually-hidden">Number 39, </span>MENA’s 50 Best<br>Restaurants<br><span class="award__year">2026</span></h2>
+      </div>
+    </section>
+
+    <!-- VISIT / RESERVE -->
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap visit__grid">
+        <div class="visit__main">
+          <h2 class="display visit__title" id="visit-title">
+            <span class="reveal-line"><span>Your table’s</span></span>
+            <span class="reveal-line"><span><em class="serif">waiting.</em></span></span>
+          </h2>
+          <p class="lede reveal">Lunch, dinner, burgers, cocktails — or all of the above.</p>
+          <div class="visit__actions reveal">
+            <a class="btn btn--xl btn--ink" href="tel:+9613843474" data-link="reserve" data-reserve-fallback="tel">Reserve a table</a>
+            <a class="btn btn--ghost-ink" href="#" data-link="directions" target="_blank" rel="noopener">Get directions<span class="visually-hidden"> (opens Google Maps in a new tab)</span></a>
+          </div>
+          <dl class="details reveal">
+            <div><dt>Address</dt><dd>BUCO<br>Gouraud Street<br>Beirut, Lebanon</dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+9613843474">+961 3 843 474</a></dd></div>
+            <div><dt>Hours</dt><dd>Daily<br>12:30 PM – 12:00 AM</dd></div>
+          </dl>
+        </div>
+
+        <div class="visit__form reveal" data-form-wrap>
+          <h3 class="form__title">Request a table</h3>
+          <p class="form__intro">Send a request and we’ll confirm by phone. Your table is only booked once we confirm.</p>
+          <form class="form" data-form novalidate>
+            <div class="field">
+              <label for="f-name">Name <span aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="f-name-err">
+              <p class="field__err" id="f-name-err" data-err></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone <span aria-hidden="true">*</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="25" aria-describedby="f-phone-hint f-phone-err">
+              <p class="field__hint" id="f-phone-hint">We’ll call or message this number to confirm.</p>
+              <p class="field__err" id="f-phone-err" data-err></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-date">Date <span aria-hidden="true">*</span></label>
+                <input id="f-date" name="date" type="date" required aria-describedby="f-date-err">
+                <p class="field__err" id="f-date-err" data-err></p>
+              </div>
+              <div class="field">
+                <label for="f-time">Time <span aria-hidden="true">*</span></label>
+                <input id="f-time" name="time" type="time" required step="900" min="12:30" max="23:30" aria-describedby="f-time-hint f-time-err">
+                <p class="field__err" id="f-time-err" data-err></p>
+              </div>
+            </div>
+            <p class="field__hint" id="f-time-hint" data-time-hint>We take requests daily from 12:30 PM to 11:30 PM. We close at 12:00 AM.</p>
+            <div class="field">
+              <label for="f-guests">Guests <span aria-hidden="true">*</span></label>
+              <select id="f-guests" name="guests" required aria-describedby="f-guests-err">
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+                <option value="9+">9 or more</option>
+              </select>
+              <p class="field__err" id="f-guests-err" data-err></p>
+            </div>
+            <div class="field">
+              <label for="f-note">Anything else? <span class="opt">(optional)</span></label>
+              <textarea id="f-note" name="note" rows="2" maxlength="300" aria-describedby="f-note-hint"></textarea>
+              <p class="field__hint" id="f-note-hint">E.g. seating preference. Please don’t include allergy or health details here — tell us by phone or when you arrive.</p>
+            </div>
+            <div class="hp" aria-hidden="true">
+              <label for="f-company">Leave this empty</label>
+              <input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="field field--check">
+              <input id="f-consent" name="consent" type="checkbox" required aria-describedby="f-consent-err">
+              <label for="f-consent">I agree that BUCO may use these details only to handle my reservation request, as explained in the <a href="privacy.html">Privacy Policy</a>. <span aria-hidden="true">*</span></label>
+              <p class="field__err" id="f-consent-err" data-err></p>
+            </div>
+            <p class="form__req"><span aria-hidden="true">*</span> Required</p>
+            <button class="btn btn--ink btn--block" type="submit">Send reservation request</button>
+            <p class="form__status" role="status" aria-live="polite" data-status></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <div>
+        <p class="foot__logo"><img src="assets/img/logo-cream.svg" alt="BUCO" width="168" height="176"></p>
+        <p class="foot__tag">Burgers &amp; Cocktails<br>Beirut, Lebanon</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="foot__links">
+          <li><a href="#" data-link="instagram" target="_blank" rel="noopener" hidden>Instagram<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#visit" data-link="reserve">Reservations</a></li>
+          <li><a href="#" data-link="directions" target="_blank" rel="noopener">Directions<span class="visually-hidden"> (opens Google Maps in a new tab)</span></a></li>
+          <li><a href="tel:+9613843474">Contact</a></li>
+        </ul>
+      </nav>
+      <address class="foot__addr">
+        Gouraud Street, Beirut<br>
+        <a href="tel:+9613843474">+961 3 843 474</a><br>
+        Daily<br>12:30 PM – 12:00 AM
+      </address>
+    </div>
+    <div class="wrap foot__legal">
+      <p>© <span data-year>2026</span> BUCO. All rights reserved.</p>
+      <ul>
+        <li><a href="legal.html">Business details</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="cookies.html">Cookies</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="refunds.html">Refunds</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
